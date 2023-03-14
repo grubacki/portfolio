@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+
+
+#logo  {
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+}
+
+#navbar {
+	margin-bottom: 40px;
+}
+
+#navbar a {
+	color: #9896a4;
+}
+
+#navbar a:hover {
+	letter-spacing: 3px;
+	color:#BE3455; 
+	font-weight: bold;
+}
+
+
+
+ul.nav {
+	display: flex;
+	justify-content: center;
+	
+	
+}
+
+
+li {
+	font-size: 15px;
+}
+
+
+#navbar ul li ul {
+	list-style: none;
+	position: absolute;
+	display: none;
+	
+	
+}
+
+#navbar ul li:hover ul {
+	display: block;
+	background-color: rgba(152,150,164,0.41);
+	
+}
+
+#navbar ul li ul li {
+	display: inline-block;
+
+}
+
+
+
+
+
+#main {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	
+}
+
+#main-contact {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	
+}
+
+
+#main-contact form {
+	position: absolute;
+	margin-top: -430px;
+	margin-left: 430px;
+	justify-content: center;
+}
+
+
+
+#about {
+	margin-top:20px;
+	margin-bottom: 20px;
+	display:flex;
+	align-items: center;
+	text-align: center;
+	
+}
+
+
+
+#gallery {
+	text-align: center;
+	background: #0f2027; 
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+	width: 100%;
+	pading-top: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0px;
+}
+
+
+#gallery img {
+	width: 230px;
+	padding: 15px;
+	margin-right: 35px;
+	margin-left: 35px;
+	filter:grayscale(80%);
+	transition: 1s;
+}
+
+
+#gallery img:hover {
+	filter: grayscale(0);
+	transform: scale(1.2);
+}
+
+#gallery h2 {
+	color: #BE3455;
+	margin: 10px 0px 10px 0px;
+}
+
+
+
+
+
+#footer {
+	margin-top: 100px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	display:flex;
+	text-align: center;
+	align-items: center;
+	position: inherit;
+	
+}
+
+
+
+
+
+#footer-middle p {
+	padding: 0;
+	margin: 0;
+	color: #9896a4;
+	font-size: 28px;
+	font-family: 'Sacramento', cursive;
+	line-height: 80%;
+}
+
+#footer-middle i {
+	font-size: 25px;
+	color: rgba(190,52,85,0.77);
+}
+
+#footer-middle .sign {
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	padding-top: 20px;
+	display: flex;
+	justify-content: flex-end;
+	color:#000000;
+}
+
+
+
+#footer-left i {
+	font-size: 25px;
+	align-items: center;
+	text-transform: capitalize;
+	color: #BE3455;
+}
+
+
+
+#footer-left a {
+	color: #9896a4;
+}
+
+
+
+#social a{
+	font-size: 15px;
+	color: #9896a4;
+
+}
+
+
+
+#social a:hover {
+	letter-spacing: 3px;
+	color:#BE3455; 
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+
+
+#footer-right i {
+	font-size: 25px;
+	align-items: center;
+	text-transform: capitalize;
+	color: #BE3455;
+}
+
+#footer-right a {
+	font-size: 15px;
+	color: #9896a4;
+}
+
+
+#footer-right a:hover {
+	letter-spacing: 3px;
+	color:#BE3455; 
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#footer-right p {
+	padding: 0;
+	margin: 0;
+	
+}
+
+#footer-left a:hover {
+	letter-spacing: 3px;
+	color:#BE3455; 
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+
+
+
+#footer-two  {
+	margin-top:20px;
+	margin-bottom: 20px;
+	border-top: 1px solid #9896a4;
+    display:flex;
+	text-align: center;
+	align-items: center;
+}
+
+
