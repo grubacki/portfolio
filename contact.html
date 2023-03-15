@@ -25,46 +25,7 @@
   <body>
 	  
 	  <!--PHP FORM-->
-	  <?php
-	  $nameErr = $emailErr = $genderErr = $websiteErr = "";
-      $name = $email = $gender = $comment = $website = "";
-	  
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed";
-    }
-  }
-  
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
-    }
-  }
-    
- 
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
-
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
 
 	  
 	<!--END PHP FORM-->  
@@ -115,22 +76,20 @@ function test_input($data) {
 		  
 		    <div class="col-12">
 				
+				
+				<div id="form">
+					
 			  <img src="images/frameblank.jpg" class="img-fluid" alt="frame" width="500px">
 				
-			  <div id="form">
-				  
-				  
 			  <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);>  
                      Name: <input type="text" name="name">
-                     <span class="error">* <?php echo $nameErr;></span>
                      <br><br>
                      E-mail: <input type="text" name="email">
-                     <span class="error">* <?php echo $emailErr;></span>
                      <br><br>
                      Comment:<br> <textarea name="comment" rows="5" cols="30"></textarea>
                      <br><br>
                      <input type="submit" name="submit" value="Submit">  
-                     </form>
+              </form>
 				
 		</div><!--END FORM-->		
 		</div>
@@ -154,8 +113,7 @@ function test_input($data) {
 			  </div>
 			  
 			  <div id="footer-middle" class="col-sm-5">
-			  <p><i class="fa-solid fa-quote-left"></i>  Have no fear of perfection, you`ll never reach it.  <i class="fa-solid fa-quote-right"></i></p>
-				  <p class="sign">Salvador Dali</p>
+			  
 			  </div>
 			  
 			  <div id="footer-left" class="col-sm-3">
@@ -171,7 +129,7 @@ function test_input($data) {
 		  
 		  <div id="footer-two" class="row">
 		  <div class="col-12">
-		  <img src="images/portfolio5.png" alt="logo" width="150px">
+		  <p>Copyright&copy;Dragana Grubački</p>
 			  
 		  </div>
 		  </div><!--END ROW FOOTER-TWO-->
